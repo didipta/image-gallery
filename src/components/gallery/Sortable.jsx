@@ -9,8 +9,6 @@ const Sortables = ({ images, handleClick, clicked, setImages }) => {
     const sortable = new Sortable(gridRef.current, {
       animation: 150,
     });
-
-   
   }, []);
   return (
     <div
@@ -40,11 +38,13 @@ const Sortables = ({ images, handleClick, clicked, setImages }) => {
               />
             </div>
             {clicked.includes(item?.id) && (
-              <input
-                type="checkbox"
-                defaultChecked
-                className="absolute top-3 left-3 z-0 p-5 w-5 h-5"
-              />
+              <div className="absolute  inset-0 bg-black bg-opacity-10 flex justify-center items-center">
+                <input
+                  type="checkbox"
+                  defaultChecked
+                  className="absolute top-3 left-3 z-0 p-5 w-5 h-5"
+                />
+              </div>
             )}
           </div>
         </>
