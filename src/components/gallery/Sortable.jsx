@@ -11,11 +11,13 @@ const Sortables = ({
 }) => {
   const gridRef = useRef(null);
 
+  // Sortable Functionality
   useEffect(() => {
     const sortable = new Sortable(gridRef.current, {
       animation: 150,
     });
   }, []);
+
   return (
     <div
       ref={gridRef}

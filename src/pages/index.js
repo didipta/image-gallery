@@ -3,12 +3,15 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
+
+  //Loading Screen Functionality
   useEffect(() => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
   }, []);
+
   return (
     <>
       {isLoading ? (

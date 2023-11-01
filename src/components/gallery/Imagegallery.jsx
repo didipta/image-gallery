@@ -6,6 +6,8 @@ import { useImageuploade } from "@/Hook/useImageupload";
 const Imagegallery = () => {
   const [images, setImages] = useState(data);
   const [clicked, setClicked] = useState([]);
+
+  //Image Upload Functionality using custom hook
   const { handleImage, image } = useImageuploade();
 
   //Checkbox Functionality
@@ -23,6 +25,7 @@ const Imagegallery = () => {
     setClicked([]);
   };
 
+  //Add Image Functionality
   useEffect(() => {
     if (image) {
       setImages([
