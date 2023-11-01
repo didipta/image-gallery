@@ -38,7 +38,6 @@ const Imagegallery = () => {
       ]);
     }
   }, [image]);
-  console.log(images);
 
   return (
     <div className="w-full">

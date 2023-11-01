@@ -2,7 +2,7 @@ import Imagegallery from "@/components/gallery/Imagegallery";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   //Loading Screen Functionality
   useEffect(() => {
